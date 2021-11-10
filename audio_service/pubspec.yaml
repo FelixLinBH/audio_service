@@ -12,20 +12,20 @@ dependencies:
 
   # Use these deps when pushing to origin (for the benefit of testers)
 
-#  audio_service_web:
-#    git:
-#      url: https://github.com/FelixLinBH/audio_service.git
-#      ref: downgrade_dependency
-#      path: audio_service_web
-#  audio_service_platform_interface:
-#    git:
-#      url: https://github.com/FelixLinBH/audio_service.git
-#      ref: downgrade_dependency
-#      path: audio_service_platform_interface
   audio_service_web:
-    path: ../audio_service_web
+    git:
+      url: https://github.com/FelixLinBH/audio_service.git
+      ref: downgrade_dependency
+      path: audio_service_web
   audio_service_platform_interface:
-    path: ../audio_service_platform_interface
+    git:
+      url: https://github.com/FelixLinBH/audio_service.git
+      ref: downgrade_dependency
+      path: audio_service_platform_interface
+#  audio_service_web:
+#    path: ../audio_service_web
+#  audio_service_platform_interface:
+#    path: ../audio_service_platform_interface
 #  audio_service_web: ^0.1.1
   audio_session: ^0.1.6+1
   rxdart: '>=0.26.0 <0.28.0'

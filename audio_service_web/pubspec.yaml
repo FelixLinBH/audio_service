@@ -9,9 +9,13 @@ environment:
 
 dependencies:
 #   Use these deps for local development
+#  audio_service_platform_interface:
+#    path: ../audio_service_platform_interface
   audio_service_platform_interface:
-    path: ../audio_service_platform_interface
-
+    git:
+      url: https://github.com/FelixLinBH/audio_service.git
+      ref: downgrade_dependency
+      path: audio_service_platform_interface
   # Use these deps when pushing to origin (for the benefit of testers)
   # audio_service_platform_interface:
   #   git:
